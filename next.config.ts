@@ -13,7 +13,8 @@ const nextConfig: import('next').NextConfig = {
   distDir: 'dist',
   images: {
     unoptimized: true
-  }
+  },
+  trailingSlash: true
 }
 
 module.exports = withPWA(nextConfig);
