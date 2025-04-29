@@ -6,6 +6,7 @@ import ToolIcons from "@/app/components/ToolIcons";
 import Header from "@/app/components/Header";
 import { motion } from "framer-motion";
 import { Row, Col } from 'react-bootstrap';
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
           >
-            <img src="/me-400x400.png" alt="Dean Francis Casili Picture" />
+            <Image src="/me-400x400.png" alt="Dean Francis Picture" width={400} height={400}/>
           </motion.figure>
         </Col>
         <Col md={12} lg={12} className="d-flex flex-column justify-content-center">
