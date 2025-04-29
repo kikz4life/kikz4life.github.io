@@ -1,0 +1,100 @@
+.about {
+  min-height: 80vh;
+  padding-top: 50px;
+
+  > .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+
+    > div {
+      width: 32%;
+      margin: 0 0.5% 10px;
+      text-decoration: none;
+      background: #273146;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 2px #0b152b;
+
+      &.broken {
+        opacity: 0.4 !important;
+      }
+
+      &:hover {
+        background: #2e3c58;
+      }
+
+      @media (max-width: 900px) {
+        width: 49%;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+
+      > .top {
+        display: flex;
+        justify-content: space-between;
+
+        > .title {
+          margin-bottom: 5px;
+          display: inline-block;
+          font-size: 1.5rem;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        .icon {
+          margin-top: 5px;
+
+          > svg {
+            width: 13px;
+            fill: #fff;
+          }
+        }
+      }
+
+      > .desc {
+        margin-bottom: 5px;
+        display: block;
+        font-size: 0.9rem;
+        font-style: italic;
+        line-height: 1.4rem;
+      }
+
+      > .built {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        > span {
+          margin: 0 5px 5px 0;
+          padding: 3px 7px;
+          display: inline-block;
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          line-height: 1;
+          background: #a2a2a2;
+          border-radius: 3px;
+          color: #000;
+        }
+      }
+
+      > .brokenAPI {
+        padding: 3px 7px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #ff0d0d;
+        background: #000;
+        border-radius: 3px;
+        font-weight: 700;
+      }
+    }
+  }
+}
