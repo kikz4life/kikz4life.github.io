@@ -63,11 +63,14 @@ export default function Home() {
         <Col md={12} lg={12} className="d-flex flex-column justify-content-center">
           <motion.h2
             initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
+            animate={{ y: 0, opacity: 1, transition: { delay: 0.5 } }}
           >
             Latest Professional Experience
           </motion.h2>
-          <motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1, transition: { delay: 0.6 } }}
+          >
             <motion.h4>Senior Full-stack Developer</motion.h4>
             <motion.h5>June 2018 – Mar 2025</motion.h5>
             <motion.p>Deltek Inc</motion.p>
