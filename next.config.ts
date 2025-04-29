@@ -7,7 +7,6 @@ const withPWA = require('next-pwa')({
 
 /** @type {import('next').NextConfig} */
 const nextConfig: import('next').NextConfig = {
-  basePath: process.env.NODE_ENV === "production" ? "/workingonmyend.github.io" : "",
   reactStrictMode: true,
   output: 'export',
   distDir: 'dist',
