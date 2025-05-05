@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";
-import "./globals.scss";
+import "./globals.css";
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
