@@ -90,7 +90,7 @@ export default function About() {
         <GithubProjects />
 
         <motion.div
-          className="flex flex-wrap justify-start min-h-[80vh] pt-[50px]"
+          className="flex flex-wrap justify-start"
           variants={container}
           initial="hidden"
           animate="show"
