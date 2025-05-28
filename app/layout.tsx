@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
@@ -62,6 +63,20 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="manifest" href="/manifest.json" />
+        {/* ✅ Step 2: Google Analytics Scripts */}
+        <Script
+          async src={`https://www.googletagmanager.com/gtag/js?id=G-LT749G9HVR`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-LT749G9HVR');
+          `}
+        </Script>
       </head>
       <body
         className={`${dancingScript.variable} antialiased`}
